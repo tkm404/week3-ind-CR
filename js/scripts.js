@@ -52,7 +52,13 @@ function roboSong(number) {
 function gnosObor(number) {
   const holdArray = number.toString().split("");
   let reverseArray = holdArray.reverse().join("");
-  return reverseArray
+  total = reverseArray;
+  let newRevArray = [];
+  for (let i = total; i >= 0; i--) {
+    newRevArray.push(total - i);
+  }
+  
+  return newRevArray
 }
 
 

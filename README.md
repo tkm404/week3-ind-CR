@@ -52,4 +52,6 @@ Test: "It should return an array of numbers from 0 to the inputted number."
 Code: roboSong(3);
 Expected Output: [0, 1, 2, 3];
 
-x
+Test: "It should return an array of numbers, and for each number containing 1 it should return "Beep!"
+Code: roboSong(3);
+Expected Output: [0, Beep!, 2, 3]

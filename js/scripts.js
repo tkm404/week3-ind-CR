@@ -53,13 +53,26 @@ window.addEventListener("load", function() {
   const intro = document.createElement("h1");
   intro.append("Welcome to Mr. Robogers' Neighborhood");
   document.querySelector("body").append(intro);
+  const form = document.createElement("form");
+  form.setAttribute("id", "number-here");
+  document.querySelector("body").append(form)
   const div = document.createElement("div");
-  document.querySelector("body").append(div);
+  document.querySelector("form").append(div);
   const imgRogers = document.createElement("img");
   imgRogers.setAttribute("src", "img/mr-rogers-robot.jpg")
   imgRogers.setAttribute("width", "50%");
+  imgRogers.setAttribute("align", "left");
   imgRogers.setAttribute("alt", "Mr. Robogers");
   document.querySelector("div").append(imgRogers);
+  const input = document.createElement("input");
+  input.setAttribute("id", "number-enter");
+  input.setAttribute("type", "text");
+  document.querySelector("div").append(input)
+  const button = document.createElement("button");
+  button.setAttribute("type", "submit");
+  button.append("Won't you be my Neighbor?");
+  document.querySelector("div").append(button)
+  
 
   document.querySelector("form#nameGoesHere").addEventListener("submit", roboSong);
 });

@@ -44,6 +44,6 @@ Expected Output: "Won't you be my neighbor?"
 
 Describe: roboSong()
 
-Test: "It should return an array of numbers from 0 to the inputted number."
+Test: "It should return an array of the inputted number."
 Code: roboSong(3);
-Expected Output: [0, 1, 2, 3]
+Expected Output: [3];

@@ -24,3 +24,8 @@ function threeNeigh(number) {
     return number
   };
 };
+
+function roboSong(number) {
+  thisMany = [number]
+  return thisMany;
+}

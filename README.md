@@ -12,6 +12,8 @@ Test: "It should return "Beep!" when a number containing 1 is entered."
 Code: oneBeep(11);
 Expected Output: "Beep!"
 
+
+
 Describe: twoBoop()
 
 Test: "It should return "Boop!" when a 2 is entered."
@@ -39,3 +41,9 @@ Expected Output: 1
 Test: "It should return "Won't you be my neighbor?" when a number containing 3 is entered."
 Code: threeNeigh(123);
 Expected Output: "Won't you be my neighbor?"
+
+Describe: roboSong()
+
+Test: "It should return an array of numbers from 0 to the inputted number."
+Code: roboSong(3);
+Expected Output: [0, 1, 2, 3]

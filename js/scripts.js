@@ -49,6 +49,15 @@ function roboSong(number) {
   return oneArray
 }
 
+
+function yesIWould() {
+  event.preventDefault();
+  const inpNumber = document.getElementById("number-enter").value;
+  const playSong = roboSong(inpNumber);
+  console.log(playSong);
+  document.getElementById("output").innerText = playSong.join(" ")
+}
+
 window.addEventListener("load", function() {
   const intro = document.createElement("h1");
   intro.append("Welcome to Mr. Robogers' Neighborhood");
@@ -67,12 +76,16 @@ window.addEventListener("load", function() {
   const input = document.createElement("input");
   input.setAttribute("id", "number-enter");
   input.setAttribute("type", "text");
-  document.querySelector("div").append(input)
+  input.setAttribute("value", "Enter a number")
+  document.querySelector("div").append(input);
   const button = document.createElement("button");
   button.setAttribute("type", "submit");
   button.append("Won't you be my Neighbor?");
-  document.querySelector("div").append(button)
-  
+  document.querySelector("input").after(button)
+  const musicBox = document.createElement("div");
+  musicBox.setAttribute("id", "output");
+  document.querySelector("body").append(musicBox)
 
-  document.querySelector("form#nameGoesHere").addEventListener("submit", roboSong);
+
+  document.querySelector("form#number-here").addEventListener("submit", yesIWould);
 });

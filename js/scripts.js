@@ -31,14 +31,16 @@ function roboSong(number) {
   for (let i = 0; i <= number; i +=1) {
   thisMany.push(total + i);
   }
-  let newArray = []
+  let oneArray = []
   thisMany.forEach(function(number) {
     let hasAOne = number.toString().split(" ");
     if (hasAOne.includes("1")) {
-      newArray.push("Beep!")
+      oneArray.push("Beep!")
+    } else if (hasAOne.includes("2")) {
+      oneArray.push("Boop!")
     } else {
-      newArray.push(number)
+      oneArray.push(number)
     }
   })
-  return newArray
+  return oneArray
 }

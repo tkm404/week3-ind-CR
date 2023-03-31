@@ -15,3 +15,7 @@ function twoBoop(number) {
     return number
   };
 };
+
+function threeNeigh(number) {
+  return "Won't you be my neighbor?"
+}

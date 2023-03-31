@@ -19,7 +19,7 @@ Code: twoBoop(2);
 Expected Output: "Boop!"
 
 Test: "It should return an input when a 2 is not entered."
-Code twoBoop(1);
+Code: twoBoop(1);
 Expected Output: 1
 
 Test: "It should return "Boop!" when a number containing 2 is entered."
@@ -32,3 +32,6 @@ Test: "It should return "Won't you be my neighbor?" when a 3 is entered."
 Code: threeNeigh(3);
 Expected Output: "Won't you be my nieghbor?"
 
+Test: "It should return an input when a 3 is not entered."
+Code: threeNeigh(1);
+Expected Output: 1

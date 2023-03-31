@@ -17,5 +17,9 @@ function twoBoop(number) {
 };
 
 function threeNeigh(number) {
+  if (number === 3) {
   return "Won't you be my neighbor?"
-}
+  } else {
+    return number
+  };
+};

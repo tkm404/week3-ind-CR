@@ -50,8 +50,10 @@ function roboSong(number) {
 }
 
 function gnosObor(number) {
-  const holdArray = number.toString().split("")
-  return holdArray
+  const holdArray = number.toString().split("");
+  let reverseArray = holdArray.reverse().join("").split(" ");
+
+  return reverseArray
 }
 
 

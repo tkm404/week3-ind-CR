@@ -81,3 +81,7 @@ Expected Output: 1
 Test: "It should return the inputted number as a string array."
 Code: gnosObor(1);
 Expected Output: ["1"] 
+
+Test "It should return the inputted number as a string array reversed."
+Code: gnosObor(12);
+Expected Output: ["21"]

@@ -51,8 +51,7 @@ function roboSong(number) {
 
 function gnosObor(number) {
   const holdArray = number.toString().split("");
-  let reverseArray = holdArray.reverse().join("").split(" ");
-
+  let reverseArray = holdArray.reverse().join("");
   return reverseArray
 }
 

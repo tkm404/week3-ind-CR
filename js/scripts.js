@@ -29,7 +29,11 @@ function roboSong(number) {
   thisMany = []
   let total = 0
   for (let i = 0; i <= number; i +=1) {
-  const roboArray = thisMany.push(total + i);
+    if (i.includes("1") {
+       oneBeep() {};
+
+    })
+  thisMany.push(parseInt(total + i));
   }  
-  return roboArray;
+  return oneBeep(number);
 }

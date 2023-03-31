@@ -8,8 +8,9 @@ function beepOne(number) {
 };
 
 function twoBoop(number) {
-  if (number === 2) {
-  return 2
+  hasATwo = number.toString().split("");
+  if (hasATwo.includes("2")) {
+  return "Boop!";
   } else {
     return number
   };

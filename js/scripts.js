@@ -34,14 +34,14 @@ function roboSong(number) {
   let oneArray = []
   thisMany.forEach(function(number) {
     let hasAOne = number.toString().split("");
-    if (hasAOne.includes("2")) {
+    if (hasAOne.includes("3")) {
+      oneArray.push("Won't you be my neighbor?")
+    } else if 
+      (hasAOne.includes("2")) {
       oneArray.push("Boop!")
     } else if 
       (hasAOne.includes("1")) {
-      oneArray.push("Beep!")
-    } else if 
-      (hasAOne.includes("3")) {
-        oneArray.push("Won't you be my neighbor?")
+        oneArray.push("Beep!")
     } else {
       oneArray.push(number)
     }

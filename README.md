@@ -54,16 +54,20 @@ Expected Output: [0, 1, 2, 3];
 
 Test: "It should return an array of numbers, and for each number containing 1 it should return "Beep!"
 Code: roboSong(3);
-Expected Output: [0, Beep!, 2, 3]
+Expected Output: [0, Beep!, 2, 3];
 
 Test: "It should return an array of numbers, and for each number containing 2 it should return "Boop!"
 Code: roboSong(3);
-Expected Output: [0, "Beep!", "Boop!", 3]
+Expected Output: [0, "Beep!", "Boop!", 3];
 
 Test: "It should return an array of numbers, and for each number containing 3 it should return "Won't you be my neighbor?"
 Code: roboSong(3);
-Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?"]
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?"];
 
 Test: "It should return an array of numbers, and for each multi-digit number containing 2, it should return "Boop!" and not "Beep!"
 Code: roboSong(12);
-Expected Output: [... 8, 9, "Beep!", "Beep!", "Boop!"]
+Expected Output: [... 8, 9, "Beep!", "Beep!", "Boop!"];
+
+Test: "It should return an array of numbers, and for each multi-digit number containing 3, it should return "Won't you be my neighbor?" and neither "Beep!" nor "Boop!"
+Code: roboSong(13);
+Expected Output: [... 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?"];

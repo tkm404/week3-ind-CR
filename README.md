@@ -11,3 +11,9 @@ Expected Output: 2
 Test: "It should return "Beep!" when a number containing 1 is entered."
 Code: oneBeep(11);
 Expected Output: "Beep!"
+
+Describe: twoBoop()
+
+Test: "It should return "Boop!" when a 2 is entered."
+Code: twoBoop(2);
+Expected Output: 2

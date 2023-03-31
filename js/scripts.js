@@ -1,8 +1,9 @@
 function beepOne(number) {
-  hasAOne = number.split("");
-  if (hasAOne === 1) {
+  hasAOne = number.toString().split("");
+  if (hasAOne.includes("1")) {
     return "Beep!";
   } else {
     return number
   };
 }
+

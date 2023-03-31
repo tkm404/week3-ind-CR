@@ -26,6 +26,11 @@ function threeNeigh(number) {
 };
 
 function roboSong(number) {
-  thisMany = [number]
+  thisMany = []
+  let total = 0
+  for (let i = 0; i <= number; i +=1) {
+  thisMany.push(total + i);  
+  
+  }
   return thisMany;
 }

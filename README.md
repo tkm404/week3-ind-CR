@@ -17,3 +17,7 @@ Describe: twoBoop()
 Test: "It should return "Boop!" when a 2 is entered."
 Code: twoBoop(2);
 Expected Output: 2
+
+Test: "It should return an input when a 2 is not entered."
+Code twoBoop(1);
+Expected Output: 1

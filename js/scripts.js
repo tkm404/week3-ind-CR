@@ -5,5 +5,8 @@ function beepOne(number) {
   } else {
     return number
   };
-}
+};
 
+function twoBoop(number) {
+  return 2
+};

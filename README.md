@@ -77,3 +77,7 @@ Describe: gnosObor()
 Test: "It should return the inputted number when a number is inputted."
 Code: gnosObor(1);
 Expected Output: 1
+
+Test: "It should return the inputted number as a string array."
+Code: gnosObor(1);
+Expected Output: ["1"] 

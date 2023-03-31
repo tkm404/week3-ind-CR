@@ -17,7 +17,8 @@ function twoBoop(number) {
 };
 
 function threeNeigh(number) {
-  if (number === 3) {
+  hasAThree = number.toString().split("");
+  if (hasAThree.includes("3")) {
   return "Won't you be my neighbor?"
   } else {
     return number

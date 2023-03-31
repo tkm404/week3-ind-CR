@@ -26,14 +26,15 @@ function threeNeigh(number) {
 };
 
 function roboSong(number) {
-  thisMany = []
+  let thisMany = []
   let total = 0
   for (let i = 0; i <= number; i +=1) {
-    if (i.includes("1") {
-       oneBeep() {};
-
-    })
-  thisMany.push(parseInt(total + i));
-  }  
-  return oneBeep(number);
-}
+  thisMany.push(total + i);
+  }
+  thisMany.forEach(function(number)) {
+    if (number ==="1") {
+      thisMany.push("Beep!")
+    }
+  }
+  return beepArray
+  } 

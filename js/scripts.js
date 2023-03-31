@@ -49,13 +49,27 @@ function roboSong(number) {
   return oneArray
 }
 
+function gnosObor(number) {
+  return number
+}
+
+
+// UI LOGIC VVV
+
+function reverseOrder() {
+  event.preventDefault();
+  const inpNumber = document.getElementById()
+}
 
 function yesIWould() {
   event.preventDefault();
   const inpNumber = document.getElementById("number-enter").value;
   const playSong = roboSong(inpNumber);
-  console.log(playSong);
-  document.getElementById("output").innerText = playSong.join(" ")
+  document.getElementById("output").innerText = playSong.join(" ");
+  const secretMessage = document.createElement("div");
+  secretMessage.append("Click the Robot to reverse the order!")
+  document.querySelector("body").append(secretMessage)
+  document.querySelector("img#roger").addEventListener("click", reverseOrder);
 }
 
 window.addEventListener("load", function() {
@@ -71,6 +85,7 @@ window.addEventListener("load", function() {
   imgRogers.setAttribute("src", "img/mr-rogers-robot.jpg")
   imgRogers.setAttribute("width", "50%");
   imgRogers.setAttribute("align", "left");
+  imgRogers.setAttribute("id", "roger")
   imgRogers.setAttribute("alt", "Mr. Robogers");
   document.querySelector("div").append(imgRogers);
   const input = document.createElement("input");
@@ -85,7 +100,6 @@ window.addEventListener("load", function() {
   const musicBox = document.createElement("div");
   musicBox.setAttribute("id", "output");
   document.querySelector("body").append(musicBox)
-
 
   document.querySelector("form#number-here").addEventListener("submit", yesIWould);
 });

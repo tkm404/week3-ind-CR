@@ -71,3 +71,9 @@ Expected Output: [... 8, 9, "Beep!", "Beep!", "Boop!"];
 Test: "It should return an array of numbers, and for each multi-digit number containing 3, it should return "Won't you be my neighbor?" and neither "Beep!" nor "Boop!"
 Code: roboSong(13);
 Expected Output: [... 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?"];
+
+Describe: gnosObor()
+
+Test: "It should return the inputted number when a number is inputted."
+Code: gnosObor(1);
+Expected Output: 1

@@ -8,5 +8,9 @@ function beepOne(number) {
 };
 
 function twoBoop(number) {
+  if (number === 2) {
   return 2
+  } else {
+    return number
+  };
 };

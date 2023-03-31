@@ -48,3 +48,18 @@ function roboSong(number) {
   })
   return oneArray
 }
+
+window.addEventListener("load", function() {
+  const intro = document.createElement("h1");
+  intro.append("Welcome to Mr. Robogers' Neighborhood");
+  document.querySelector("body").append(intro);
+  const div = document.createElement("div");
+  document.querySelector("body").append(div);
+  const imgRogers = document.createElement("img");
+  imgRogers.setAttribute("src", "img/mr-rogers-robot.jpg")
+  imgRogers.setAttribute("width", "50%");
+  imgRogers.setAttribute("alt", "Mr. Robogers");
+  document.querySelector("div").append(imgRogers);
+
+  document.querySelector("form#nameGoesHere").addEventListener("submit", roboSong);
+});

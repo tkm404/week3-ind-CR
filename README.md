@@ -1,3 +1,11 @@
+Title: Mr. Robogers' Neighborhood
+
+Week 3 Independent Code Review at Epicodus.
+
+This webpage should demonstrate the TDD method, or "Testing Driven Development," and show my understanding of for / forEach loops in JavaScript. Also, the code should show my adherence to organziation- keeping Business logic and UI logic separate in my JS script page.
+
+The user enters a number in the input field and presses the "Won't you be my Neighbor?" button. The result should appear as a series of numbers counting up from the inputted number, interspersed with text, "Beep!" "Boop!" and "Won't you be my neighbor?" The text appears according to this hierarchy: numbers with 3 display a message before numbers with 2; before numbers with 1. Additional functionality WIP: clicking on the image will reverse the order of the text output.
+
 Describe: oneBeep()
 
 Test: "It should return "Beep!" when a 1 is entered."

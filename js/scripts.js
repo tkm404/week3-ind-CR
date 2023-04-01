@@ -58,9 +58,17 @@ function gnosObor(number) {
     newRevArray.push(total - i);
   }
   let twoArray = newRevArray.reverse()
-  return twoArray
+  let displayTwoArray = []
+  twoArray.forEach(function(number) {
+    let hasThreeTwoOne = number.toString().split("")
+    if (hasThreeTwoOne.includes("3")) {
+      displayTwoArray.push("Won't you be my neighbor?")
+    } else {
+      displayTwoArray.push(number);
+    }
+  })
+  return displayTwoArray
 }
-
 
 // UI LOGIC VVV
 

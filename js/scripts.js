@@ -63,6 +63,8 @@ function gnosObor(number) {
     let hasThreeTwoOne = number.toString().split("")
     if (hasThreeTwoOne.includes("3")) {
       displayTwoArray.push("Won't you be my neighbor?")
+    } else if (hasThreeTwoOne.includes("2")) {
+      displayTwoArray.push("Boop!")
     } else {
       displayTwoArray.push(number);
     }

@@ -65,7 +65,9 @@ function gnosObor(number) {
       displayTwoArray.push("Won't you be my neighbor?")
     } else if (hasThreeTwoOne.includes("2")) {
       displayTwoArray.push("Boop!")
-    } else {
+    } else if (hasThreeTwoOne.includes("1")) {
+      displayTwoArray.push("Beep!")
+    } else {  
       displayTwoArray.push(number);
     }
   })
@@ -74,9 +76,16 @@ function gnosObor(number) {
 
 // UI LOGIC VVV
 
+
+
 function reverseOrder() {
   event.preventDefault();
-  const inpNumber = document.getElementById()
+  const removeSecret = document.getElementById("secret");
+  removeSecret.removeAttribute("id");
+  const inpNumber = document.getElementById("number-enter").value;
+  const playMore = gnosObor(inpNumber);
+  document.getElementById("output").innerText = playMore.join(" ");
+  document.querySelector("img#roger").addEventListener("click", yesIWould)
 }
 
 function yesIWould() {
@@ -85,6 +94,7 @@ function yesIWould() {
   const playSong = roboSong(inpNumber);
   document.getElementById("output").innerText = playSong.join(" ");
   const secretMessage = document.createElement("div");
+  secretMessage.setAttribute("id", "secret");
   secretMessage.append("Click the Robot to reverse the order!")
   document.querySelector("body").append(secretMessage)
   document.querySelector("img#roger").addEventListener("click", reverseOrder);

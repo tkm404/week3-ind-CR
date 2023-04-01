@@ -104,8 +104,12 @@ Expected Output: [12, 11, 10, ... 2, 1, 0]
 
 Test: "It should return an array of numbers, and for each number containing 3 return "Will you be my neighbor?"
 Code: gnosObor(31);
-Expected Output: ["Will you be my neighbor?, 12, 11, 10... 4, "Will you be my neighbor?", 2, 1, 0]
+Expected Output: ["Will you be my neighbor?, 12, 11, 10... 4, "Will you be my neighbor?", 2, 1, 0];
 
 Test: "It should return an array of numbers, and for each number containing 2 (and not 3) return "Boop!"
 Code: gnosObor(31);
-Expected Output: "Will you be my neighbor?", "Boop!", 11, 10... 4, "Will you be my neighbor?, "Boop!", 1, 0]; 
+Expected Output: ["Will you be my neighbor?", "Boop!", 11, 10... 4, "Will you be my neighbor?, "Boop!", 1, 0]; 
+
+Test: "It should return an array of numbers, and for each number containing 1 (and neither 2 nor 3) return "Beep!"
+Code: gnosObor(31);
+Expected Output: ["Will you be my neighbor?", "Boop!", "Beep!", "Beep!", 9... 4, "Will you be my neighbor?", "Boop!", "Beep!", 0];

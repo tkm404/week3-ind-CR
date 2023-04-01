@@ -76,16 +76,21 @@ function gnosObor(number) {
 
 // UI LOGIC VVV
 
+function reReverse() {
+  event.preventDefault();
+  const inpNumber = document.getElementById("number-enter").value;
+  const playAgain = roboSong(inpNumber);
+  document.getElementById("output").innerText = playAgain.join(" ");
+  document.querySelector("img#roger").addEventListener("click", reverseOrder)
+}
 
 
 function reverseOrder() {
   event.preventDefault();
-  const removeSecret = document.getElementById("secret");
-  removeSecret.removeAttribute("id");
   const inpNumber = document.getElementById("number-enter").value;
   const playMore = gnosObor(inpNumber);
   document.getElementById("output").innerText = playMore.join(" ");
-  document.querySelector("img#roger").addEventListener("click", yesIWould)
+  document.querySelector("img#roger").addEventListener("click", reReverse);
 }
 
 function yesIWould() {
@@ -96,7 +101,7 @@ function yesIWould() {
   const secretMessage = document.createElement("div");
   secretMessage.setAttribute("id", "secret");
   secretMessage.append("Click the Robot to reverse the order!")
-  document.querySelector("body").append(secretMessage)
+  document.querySelector("body").prepend(secretMessage)
   document.querySelector("img#roger").addEventListener("click", reverseOrder);
 }
 
@@ -116,10 +121,13 @@ window.addEventListener("load", function() {
   imgRogers.setAttribute("id", "roger")
   imgRogers.setAttribute("alt", "Mr. Robogers");
   document.querySelector("div").append(imgRogers);
+  const label = document.createElement("label");
+  label.setAttribute("for", "input");
+  label.append("Enter a number:");
+  document.querySelector("div").append(label);
   const input = document.createElement("input");
   input.setAttribute("id", "number-enter");
   input.setAttribute("type", "text");
-  input.setAttribute("value", "Enter a number")
   document.querySelector("div").append(input);
   const button = document.createElement("button");
   button.setAttribute("type", "submit");

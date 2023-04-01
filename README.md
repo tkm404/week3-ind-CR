@@ -85,3 +85,11 @@ Expected Output: ["1"]
 Test "It should return the inputted number as a string reversed."
 Code: gnosObor(12);
 Expected Output: "21"
+
+Test "It should return an array of numbers from 0 to the reversed inputted number>"
+Code: gnosObor(21);
+Expected Output: [... 7, 8, 9, 10, 11, 12]
+
+Test: "It should return an array of numbers from the highest reveresd inputted number to 0."
+Code: gnosObor(21);
+Expected Output: [12, 11, 10, ... 2, 1, 0]

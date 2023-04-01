@@ -57,8 +57,8 @@ function gnosObor(number) {
   for (let i = total; i >= 0; i--) {
     newRevArray.push(total - i);
   }
-  
-  return newRevArray
+  let twoArray = newRevArray.reverse()
+  return twoArray
 }
 
 

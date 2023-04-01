@@ -26,12 +26,12 @@ function threeNeigh(number) {
 };
 
 function roboSong(number) {
-  let thisMany = []
-  let total = 0
+  let thisMany = [];
+  let total = 0;
   for (let i = 0; i <= number; i +=1) {
   thisMany.push(total + i);
-  }
-  let oneArray = []
+  };
+  let oneArray = [];
   thisMany.forEach(function(number) {
     let hasAOne = number.toString().split("");
     if (hasAOne.includes("3")) {
@@ -45,9 +45,9 @@ function roboSong(number) {
     } else {
       oneArray.push(number)
     }
-  })
+  });
   return oneArray
-}
+};
 
 function gnosObor(number) {
   const holdArray = number.toString().split("");
@@ -56,9 +56,9 @@ function gnosObor(number) {
   let newRevArray = [];
   for (let i = total; i >= 0; i--) {
     newRevArray.push(total - i);
-  }
+  };
   let twoArray = newRevArray.reverse()
-  let displayTwoArray = []
+  let displayTwoArray = [];
   twoArray.forEach(function(number) {
     let hasThreeTwoOne = number.toString().split("")
     if (hasThreeTwoOne.includes("3")) {
@@ -68,11 +68,11 @@ function gnosObor(number) {
     } else if (hasThreeTwoOne.includes("1")) {
       displayTwoArray.push("Beep!")
     } else {  
-      displayTwoArray.push(number);
+      displayTwoArray.push(number)
     }
-  })
+  });
   return displayTwoArray
-}
+};
 
 // UI LOGIC VVV
 
